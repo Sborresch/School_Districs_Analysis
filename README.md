@@ -54,10 +54,16 @@ Based on the above results from the updated and the corrupted versions of data, 
 ### School Summary
 ![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/per_school_summary.png)
 
+The above image is a image of the data frame that details both the categores from the student and school CSV files, merged on the School ID category, and by each of the 15 high schools. 
+
+#### Thomas High School Performance
 
 
-### Thomas High School Performance
-![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/per_school_summary.png)
+#### Top 5 Performing Schools
+![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/top_five_schools.png)
+
+#### Bottom 5 Performing Schools
+![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/bottom_five_schools.png)
 
 ### Math & Reading Scores By Grade
 ![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/per_school_summary.png)
