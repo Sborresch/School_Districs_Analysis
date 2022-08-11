@@ -13,7 +13,7 @@
 
 It was decided that the data analytics team will fill in the corrupted data values with the string "NaN". Once the corrupted values were fixed, the analysis had to be re-ran to find the key metrics the School Board of Education requested for decision making purposes. The key metrics are listed below and in more detail in the Results section of this analysis:
 
-1. Distric Summary
+1. District Summary
 2. School Summary
 3. Thomas High School Performance
 4. Math & Reading Scores By Grade
@@ -58,19 +58,62 @@ The above image is a image of the data frame that details both the categores fro
 
 #### Thomas High School Performance
 
+Based on the image above, Thomas High School performed quite well given the corrupted data. On both the updated and corrupted results, school type, total students, total budget and per student budget did not change because only the test scores were removed, not the entire row values. Therefore keeping the count of students the same. However, the test score categories were different. Below are the findings both before and after the corrupted data was fixed:
+
+corrupted:updated
+- Average Math Score = 83.4: 83.4
+- Average Reading Score = 84.0: 84
+- % Passing Math = 93.2: 93.2
+- % Passing Reading = 97.3: 97.0
+- % Overall Passing = 91.0: 91.0
+
+The only difference in the data after changing the Thomas High School corrupted data values to NaN is in the % Passing Reading. There was a negative change in the tenth decimal point which overall shows a small decrease in Thomas High School proficency.
 
 #### Top 5 Performing Schools
 ![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/top_five_schools.png)
 
+There was no change in the ranking of the top 5 performing schools between the corrupted data results and the updated data results. Both dataframes showed the following schools ranked by performance from first to fith:
+
+1. Cabrera High School
+2. Thomas High School
+3. Griffin High School
+4. Wilson High School
+5. Pena High School
+
 #### Bottom 5 Performing Schools
 ![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/bottom_five_schools.png)
 
+There was no change in the ranking of the bottom 5 performing schools between the corrupted data results and the updated data results. Both dataframes showed the following schools ranked by performance from first to fith:
+
+1. Rodriguez High School
+2. Figueroa High School
+3. Huang High School
+4. Hernandez High School
+5. Johnson High School
+
 ### Math & Reading Scores By Grade
-![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/per_school_summary.png)
+#### Math Scores By Grade
+![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/math_avg_per_school_per_grade.png)
+
+
+
+#### Reading Scores By Grade
+![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/reading_avg_per_school_per_grade.png)
+
 
 ### Scores By School Spending
+![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/scores_per_schoolspending_per_student.png)
+
+The above dataframe was put together by the data analytics team for the State Board of Education so that they could identify if the spending per student effects proficency in students. Based on the dataframe the percent of overall passing was incrementally higher as less money was provided. In the <$586 spending per student category it had the highest overall passing, % passing math, % passing reading, average reading score, and average math score. It can be determined that there is more spending per student for high schools and students who do not perform as high as other to provide better resources to improve said test scores
+
+There was no statistical change in the values between the corrupted and updated results.
 
 ### Scores By School Size
+![Screenshot](https://github.com/Sborresch/School_Districts_Analysis/blob/main/scores_per_school_size.png)
+
+The above dataframe wsa put together for the State Board of Education so that they could identify if the size of the school made any statistical difference on proficency in the students. Based on the dataframe schools that are classified as small or medium, which is less than 2000 students, had similar proficiency results across the board. Of those categories small and medicum schools obtained a B and A average. As the schools got larger, 2000-5000 students, the proficency in students decreased across the board especially in the % overall passing. This can show that schools with higher population counts have lower proficency possiby due to resource allocation. As these schools should also be receiving the most spending per student based on the Scores By School Spending dataframe results.
+
+There was no statistical change in the values between the corrupted and updated results.
 
 ### Scores By School Type
 
